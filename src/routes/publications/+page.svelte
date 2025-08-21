@@ -3,12 +3,28 @@
 
     const publications = [
         {
+            title: "Smooth InfoMax - Towards Easier Post-Hoc Interpretability",
+            date: "Sep 2025",
+            link: "https://arxiv.org/abs/2408.12936",
+            published: "ECML-PKDD'25",
+            image: "people/fabian.jpg",
+            description: "SIM makes post-hoc interpretability tools more effective through latent space constraints"
+        },
+        {
             title: "Improving neural network accuracy by concurrently training with a twin network",
             date: "Apr 2025",
             link: "https://openreview.net/forum?id=TEmE9PSC65",
             published: "ICLR'25",
             image: "people/benjamin.jpg",
             description: "We show the applicability of twin network augmentation on convolutional neural networks"
+        },
+        { 
+            title: "Label-efficient learning for radio frequency fingerprint identification",
+            date: "Mar 2025",
+            link: "https://ieeexplore.ieee.org/abstract/document/10978444",
+            published: "IEEE WCNC'25",
+            image: "people/fabian.jpg",
+            description: "We introduce a label-efficient approach for Radio Frequency Fingerprint Identification, achieving competitive accuracy with up to 10x fewer labels."
         },
         {
             title: "Compositionality unlocks deep interpretable models",
