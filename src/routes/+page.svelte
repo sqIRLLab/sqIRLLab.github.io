@@ -46,7 +46,7 @@
     <div class="column is-3">
         <div class="box has-text-centered">
             <figure class="image is-128x128 is-inline-block">
-                <img class="is-rounded" src="sqirl.png" alt="sqirl" />
+                <img src="sqirl.png" alt="sqirl" />
             </figure>
             <!-- <h4 class="subtitle is-4"> <b> sqIRL </b> </h4> -->
 
