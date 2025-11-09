@@ -55,7 +55,7 @@
             <hr />
             <div class="block">
                 <span class="icon"><i class="fas fa-envelope"></i> </span>
-                <span> <a href="mailto:doomsthomas@gmail.com"> Email </span>
+                <span> <a href="mailto:doomsthomas@gmail.com"> Email </a></span>
             </div>
         </div>
     </div>

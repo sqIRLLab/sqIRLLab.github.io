@@ -44,7 +44,7 @@
 <div class="is-hidden-desktop">
     <div class="columns is-mobile">
         <div class="column is-3">
-            <a class="navbar-burger {burger ? 'is-active' : ''}" role="button" aria-label="menu" aria-expanded={burger} on:click={() => burger = !burger}>
+            <a href="javascript:void(0)" class="navbar-burger {burger ? 'is-active' : ''}" role="button" aria-label="menu" aria-expanded={burger} tabindex="0" on:click={() => burger = !burger} on:keydown={(e) => e.key === 'Enter' && (burger = !burger)}>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>

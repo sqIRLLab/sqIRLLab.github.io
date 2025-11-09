@@ -1,5 +1,5 @@
 <script lang="ts">
-    export let link: string;        // arxiv.com?mycoolpaper
+    export let link: string | undefined = undefined;  // arxiv.com?mycoolpaper
     export let title: string;       // captivating title
     export let date: string;        // jan 1970
     export let image: string;       // myface.jpg
@@ -16,7 +16,7 @@
     }
 </style>
 
-<a class="box" href={link}>
+<svelte:element this={link ? 'a' : 'div'} class="box" href={link}>
     <div class="columns is-vcentered">
         <div class="column is-narrow is-hidden-mobile">
             <figure class="image is-48x48 is-inline-block">
@@ -37,4 +37,4 @@
             <p> {description} </p>
         </div>
     </div>
-</a>
+</svelte:element>

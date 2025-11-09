@@ -3,6 +3,22 @@
 
     const publications = [
         {
+            title: "Parameterized Synthetic Text Generation with SimpleStories",
+            date: "Nov 2025",
+            published: "NeurIPS'25",
+            link: "https://openreview.net/pdf?id=sVh3eQ642W",
+            image: "people/thomas.jpg",
+            description: "A dataset full of simple yet diverse stories; the MNIST for language",
+        },
+        {
+            title: "Finding manifolds with bilinear autoencoders",
+            date: "Oct 2025",
+            published: "NeurIPS MI workshop",
+            link: "https://www.arxiv.org/pdf/2510.16820",
+            image: "people/thomas.jpg",
+            description: "Decomposing activations into sparse polynomials and using their geometry",
+        },
+        {
             title: "Smooth InfoMax - Towards Easier Post-Hoc Interpretability",
             date: "Sep 2025",
             link: "https://arxiv.org/abs/2408.12936",
