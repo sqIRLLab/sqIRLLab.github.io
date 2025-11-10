@@ -1,0 +1,1 @@
+import{f as s,a as i}from"../chunks/BVKn8-tb.js";import"../chunks/BpDx7vxY.js";import{f,s as p}from"../chunks/FtJ1th04.js";import{s as n}from"../chunks/CgbZ4OFu.js";import{N as e}from"../chunks/DqzKu2qT.js";var l=s("<!> <!>",1);function b(r,t){var o=l(),a=f(o);e(a,{page:"publications"});var m=p(a,2);n(m,t,"default",{}),i(r,o)}export{b as component};

@@ -1,0 +1,32 @@
+[
+  {
+    "date": "Jan 2025",
+    "title": "Paper accepted",
+    "description": "Two papers accepted at ICLR'25 on Twin Network Augmentation and Interpretability via Bilinear MLPs.",
+    "link": ""
+  },
+  {
+    "date": "Dec 2024",
+    "title": "Paper accepted",
+    "description": "Saja's paper on the interpretability of Capsule Networks was accepted at the journal of Neurocomputing.",
+    "link": "https://arxiv.org/abs/2305.05349"
+  },
+  {
+    "date": "Oct 2024",
+    "title": "Paper accepted",
+    "description": "Thomas' work on deeper forward-forward networks got published at TMLR.",
+    "link": "https://openreview.net/forum?id=a7KP5uo0Fp"
+  },
+  {
+    "date": "Oct 2024",
+    "title": "New member",
+    "description": "sqIRL welcomes Peter to the lab.",
+    "link": ""
+  },
+  {
+    "date": "Sep 2024",
+    "title": "Workshop",
+    "description": "Co-organized the AIMLAI Workshop held in conjunction with ECML-PKDD'24.",
+    "link": ""
+  }
+]

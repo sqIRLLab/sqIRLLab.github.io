@@ -1,0 +1,1 @@
+import{f as p,a as s}from"../chunks/BVKn8-tb.js";import"../chunks/BpDx7vxY.js";import{f,s as e}from"../chunks/FtJ1th04.js";import{s as i}from"../chunks/CgbZ4OFu.js";import{N as n}from"../chunks/DqzKu2qT.js";var l=p("<!> <!>",1);function u(r,t){var o=l(),a=f(o);n(a,{page:"people"});var m=e(a,2);i(m,t,"default",{}),s(r,o)}export{u as component};
