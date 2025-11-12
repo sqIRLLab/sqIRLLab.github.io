@@ -7,6 +7,13 @@
     "link": "https://webserver.idlab.uantwerpen.be/~joramasmogrovejo/"
   },
   {
+    "name": "Renata Turkeš",
+    "status": "Postdoctoral researcher",
+    "specialty": "Topological data analysis",
+    "image": "people/renata.png",
+    "link": "https://renata-turkes.github.io"
+  },
+  {
     "name": "Thomas Dooms",
     "status": "PhD student",
     "specialty": "Weight-based interpretability",
