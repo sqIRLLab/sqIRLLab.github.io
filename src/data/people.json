@@ -40,5 +40,12 @@
     "specialty": "Explainable Artificial Intelligence",
     "image": "people/saja.png",
     "link": "https://stawalbeh.github.io/STawalbeh/"
+  },
+  {
+    "name": "Salma Haidar",
+    "status": "PhD student",
+    "specialty": "Hyperspectral image analysis",
+    "image": "people/salma.png",
+    "link": "https://salma-haidar.github.io/"
   }
 ]

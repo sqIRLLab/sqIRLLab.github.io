@@ -1,10 +1,24 @@
 [
   {
+    "title": "Webinar @ VAIA - Flanders AI EDIH HSI Talk",
+    "date": "29 Sep 2025",
+    "link": "publications/_example",
+    "image": "people/salma.jpg",
+    "description": "Hyperspectral Imaging and Machine Learning: Decoding the Spectrum for Advanced Data Analysis"
+  },
+  {
     "title": "Talk @ VisAPP'24",
     "date": "27 Feb 2025",
     "link": "publications/_example",
     "image": "people/benjamin.jpg",
     "description": "Recognizing actions in high-resolution low-framerate videos: a feasibility study in the construction sector."
+  },
+  {
+    "title": "Talk @ ACRAI Research Day",
+    "date": "21 Feb 2025",
+    "link": "publications/_example",
+    "image": "people/salma.jpg",
+    "description": "Explainability-Driven Dimensionality Reduction for Hyperspectral Imaging"
   },
   {
     "title": "Talk @ Flanders AI Day",
