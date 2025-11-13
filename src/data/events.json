@@ -12,5 +12,27 @@
     "link": "https://docs.google.com/presentation/d/1PdcHm0bgwIu3yhy6oWkwL1-fDGTPzTiyUilydognLlw/edit?usp=sharing",
     "image": "people/thomas.jpg",
     "description": "A swift introduction to weight-based interpretability."
+  },
+  {
+    "title": "Talk @ BeCode",
+    "date": "Oct 2024",
+    "link": "publications/_example",
+    "image": "people/saja.png",
+    "description": "General presentation about explainability"
+  },
+  {
+    "title": "Talk @ Women in Data Science (WiDS)",
+    "date": "Mar 2024",
+    "link": "publications/_example",
+    "image": "people/saja.png",
+    "description": "Analyzing Representations Learned via Capsule Neural Networks. A systematic and principled study towards assessing the interpretability of Capsule networks"
+  },
+  {
+    "title": "Talk @ Clusity",
+    "date": "June 2023",
+    "link": "publications/_example",
+    "image": "people/saja.png",
+    "description": "General presentation about explainability"
   }
+
 ]
