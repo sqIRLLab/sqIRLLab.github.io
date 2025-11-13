@@ -8,6 +8,7 @@ Install [Node.js](https://nodejs.org/en) if you haven't already, then run:
 
 ```bash
 npm install       # Install dependencies
+npm run setup       # Run css setup
 npm run dev       # Start development server
 ```
 
