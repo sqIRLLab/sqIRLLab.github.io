@@ -1,7 +1,7 @@
 [
   {
   "title": "A Taxonomy of Interpretation and Explanation Methods for Capsule Network Architectures",
-  "date": "November 2025",
+  "date": "Nov 2025",
   "published": "Neurocomputing",
   "link": "https://www.sciencedirect.com/science/article/abs/pii/S0925231225026979",
   "doi": "10.1016/j.neucom.2025.132025",
@@ -58,11 +58,11 @@
   },
   {
     "title": "Analyzing the Explanation and Interpretation Potential of Matrix Capsule Networks",
-    "date": "February 2025",
+    "date": "Feb 2025",
     "published": "Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML PKDD 2025)",
     "link": "https://link.springer.com/chapter/10.1007/978-3-031-74630-7_5#citeas",
     "image": "people/saja.png",
-    "description": "This study investigates the internal mechanisms of Matrix Capsule Networks with the EM-Routing algorithm, analyzing their potential for providing interpretable and explainable representations within deep learning systems"
+    "description": "This study investigates the internal mechanisms of Matrix Capsule Networks with the EM-Routing algorithm"
   },
   {
     "title": "Compositionality unlocks deep interpretable models",
