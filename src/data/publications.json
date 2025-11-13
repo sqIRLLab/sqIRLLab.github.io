@@ -58,12 +58,13 @@
   },
   {
     "title": "Analyzing the Explanation and Interpretation Potential of Matrix Capsule Networks",
-    "date": "Feb 2025",
-    "published": "Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML PKDD 2025)",
+    "date": "Feb, 2025",
+    "published": "ECML PKDD (AIMLAI workshop) 2025",
     "link": "https://link.springer.com/chapter/10.1007/978-3-031-74630-7_5#citeas",
     "image": "people/saja.png",
-    "description": "This study investigates the internal mechanisms of Matrix Capsule Networks with the EM-Routing algorithm"
-  },
+    "description": "This study investigates the internal mechanisms of Matrix Capsule Networks with the EM Routing algorithm"
+  }
+  ,
   {
     "title": "Compositionality unlocks deep interpretable models",
     "date": "Dec 2024",
@@ -114,7 +115,7 @@
   {
   "title": "Gated Recurrent Unit with Multilingual Universal Sentence Encoder for Arabic Aspect-Based Sentiment Analysis",
   "date": "Feb 2023", 
-  "published": "Knowledge-Based Systems",
+  "published": "Knowledge Based Systems",
   "link": "https://www.sciencedirect.com/science/article/pii/S0950705122007300",
   "image": "people/saja.png", 
   "description": "This study presents a deep learning model for Arabic Aspect-Based Sentiment Analysis (ABSA) using Gated Recurrent Units (GRU) combined with features from the Multilingual Universal Sentence Encoder (MUSE)" 
