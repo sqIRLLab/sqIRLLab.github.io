@@ -110,5 +110,13 @@
     "description": "Three techniques to significantly improve the Forward-Forward algorithm. We achieve 84% on CIFAR-10.",
     "image": "people/thomas.jpg",
     "link": "https://tdooms.github.io/research/trifecta"
+  },
+  {
+  "title": "Gated Recurrent Unit with Multilingual Universal Sentence Encoder for Arabic Aspect-Based Sentiment Analysis",
+  "date": "Feb 2023", 
+  "published": "Knowledge-Based Systems",
+  "link": "https://www.sciencedirect.com/science/article/pii/S0950705122007300",
+  "image": "people/saja.png", 
+  "description": "This study presents a deep learning model for Arabic Aspect-Based Sentiment Analysis (ABSA) using Gated Recurrent Units (GRU) combined with features from the Multilingual Universal Sentence Encoder (MUSE)" 
   }
 ]
