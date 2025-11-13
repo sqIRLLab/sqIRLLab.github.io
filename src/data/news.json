@@ -1,5 +1,11 @@
 [
   {
+    "date": "Nov 2025",
+    "title": "Paper accepted",
+    "description": "Saja's paper on positioning a taxonomy of interpretation and explanation methods for Capsule Networks was accepted in the journal Neurocomputing.",
+    "link": "https://www.sciencedirect.com/science/article/abs/pii/S0925231225026979"
+  },
+  {
     "date": "Jan 2025",
     "title": "Paper accepted",
     "description": "Two papers accepted at ICLR'25 on Twin Network Augmentation and Interpretability via Bilinear MLPs.",
@@ -27,6 +33,12 @@
     "date": "Sep 2024",
     "title": "Workshop",
     "description": "Co-organized the AIMLAI Workshop held in conjunction with ECML-PKDD'24.",
+    "link": ""
+  },
+  {
+    "date": "Mar 2024",
+    "title": "Event",
+    "description": "Co-organized a Women in Data event.",
     "link": ""
   }
 ]
