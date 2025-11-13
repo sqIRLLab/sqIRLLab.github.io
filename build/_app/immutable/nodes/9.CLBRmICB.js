@@ -1,1 +1,0 @@
-import{f as p,a as r}from"../chunks/BVKn8-tb.js";import"../chunks/BpDx7vxY.js";var e=p('<div class="box">This is an example page for where you can put your paper content!</div>');function i(o){var a=e();r(o,a)}export{i as component};
