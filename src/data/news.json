@@ -6,6 +6,18 @@
     "link": "https://www.sciencedirect.com/science/article/abs/pii/S0925231225026979"
   },
   {
+    "date": "Oct 2025",
+    "title": "Paper accepted",
+    "description": "One paper accepted at Neurocomputing on Interpretable HDC Classifiers.",
+    "link": "https://doi.org/10.1016/j.neucom.2025.131643"
+  },
+  {
+    "date": "Sep 2025",
+    "title": "New member",
+    "description": "sqIRL welcomes Renata to the lab..",
+    "link": ""
+  },
+  {
     "date": "Jun 2025",
     "title": "Paper accepted",
     "description": "Two papers accepted at ECML-PKDD'25 on Smooth-InfoMax and Interpretability of SNNs.",
@@ -15,7 +27,7 @@
     "date": "Jan 2025",
     "title": "Paper accepted",
     "description": "Two papers accepted at ICLR'25 on Twin Network Augmentation and Interpretability via Bilinear MLPs.",
-    "link": ""
+    "link": "https://renata-turkes.github.io/"
   },
   {
     "date": "Dec 2024",
