@@ -14,8 +14,8 @@
   {
     "date": "Sep 2025",
     "title": "New member",
-    "description": "sqIRL welcomes Renata to the lab..",
-    "link": ""
+    "description": "sqIRL welcomes Renata to the lab.",
+    "link": "https://renata-turkes.github.io/"
   },
   {
     "date": "Jun 2025",
@@ -27,7 +27,7 @@
     "date": "Jan 2025",
     "title": "Paper accepted",
     "description": "Two papers accepted at ICLR'25 on Twin Network Augmentation and Interpretability via Bilinear MLPs.",
-    "link": "https://renata-turkes.github.io/"
+    "link": ""
   },
   {
     "date": "Dec 2024",
