@@ -106,9 +106,9 @@
     {
         "title": "A Contrastive Learning Method for Multi-Label Predictors on Hyperspectral Images",
         "date": "Feb 2024",
-        "published": "IEEE Xplore-2023 13th Workshop on Hyperspectral Imaging and Signal Processing: Evolution in Remote Sensing (WHISPERS)",
-        "link": " 10.1109/WHISPERS61460.2023.10430726",
-        "image": "people/salma.png",
+        "published": "WHISPERS 2023",
+        "link": "https://doi.org/10.1109/WHISPERS61460.2023.10430726",
+        "image": "people/salma.jpg",
         "description": "Self-supervised contrastive learning for multi-label hyperspectral image classification"
     },
     {
@@ -116,7 +116,7 @@
         "date": "Dec 2023",
         "published": "remote sensing - mdpi",
         "link": "https://doi.org/10.3390/rs15245656",
-        "image": "people/salma.png",
+        "image": "people/salma.jpg",
         "description": "A deep learning model for hyperspectral remote sensing, shifting from traditional single-label, pixel-level classification to multi-label, patch-level analysis"
     },
     {
