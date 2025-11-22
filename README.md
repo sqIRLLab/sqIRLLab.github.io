@@ -11,26 +11,38 @@ npm install       # Install dependencies
 npm run dev       # Start development server
 ```
 
-Visit `http://localhost:5173` to preview your changes locally.
+Visit `http://localhost:4321` to preview your changes locally.
 
 ## Deployment
 
-Build and deploy changes to the live website (or use the built-in git tool in your IDE):
+Changes are automatically deployed to GitHub Pages when you push to the main branch:
 
 ```bash
-npm run build     # Build for production
 git add .
 git commit -m "Update content"
-git push          # Deploy to GitHub Pages
+git push          # Automatically builds and deploys via GitHub Actions
 ```
+
+The GitHub Actions workflow handles building and deployment automatically. You can monitor the deployment status in the [Actions tab](../../actions).
 
 ## Editing Content
 
-All website content is stored as JSON files in `src/data/`. Simply edit these files to update the website:
+All website content is stored as individual JSON files in `src/content/`. The build process validates all data strictly - any errors in your JSON files will cause the build to fail with clear error messages.
+
+### Data Validation Rules
+
+All content files are validated during build. Common validation requirements:
+
+- **Dates**: Must be in `YYYY/MM/DD` format (e.g., `2024/01/15`)
+- **URLs**: Must start with `http://` or `https://`
+- **Images**: Must end with `.jpg`, `.jpeg`, `.png`, `.gif`, `.webp`, or `.svg`
+- **Strings**: Cannot be empty
+- **Email**: Must be a valid email address (for home page contact)
+- **No extra fields**: Unknown fields will cause build errors
 
 ### Adding Publications
 
-Edit `src/data/publications.json`:
+Create a new JSON file in `src/content/publications/` (e.g., `your-paper.json`):
 
 ```json
 {
@@ -45,7 +57,7 @@ Edit `src/data/publications.json`:
 
 ### Adding People
 
-Edit `src/data/people.json`:
+Create a new JSON file in `src/content/people/` (e.g., `firstname.json`):
 
 ```json
 {
@@ -59,7 +71,7 @@ Edit `src/data/people.json`:
 
 ### Adding Events
 
-Edit `src/data/events.json`:
+Create a new JSON file in `src/content/events/` (e.g., `event-name.json`):
 
 ```json
 {
@@ -73,7 +85,7 @@ Edit `src/data/events.json`:
 
 ### Adding News
 
-Edit `src/data/news.json`:
+Create a new JSON file in `src/content/news/` (e.g., `2025-01-news-title.json`):
 
 ```json
 {
@@ -88,17 +100,20 @@ Edit `src/data/news.json`:
 
 ```text
 src/
-├── data/           # JSON content files (edit these!)
-│   ├── people.json
-│   ├── publications.json
-│   ├── events.json
-│   └── news.json
-├── lib/            # Reusable components
-└── routes/         # Page structure and layouts
+├── content/        # JSON content files (edit these!)
+│   ├── people/         # Individual person profiles
+│   ├── publications/   # Individual publications
+│   ├── events/         # Individual events
+│   ├── news/           # Individual news items
+│   └── home/           # Homepage content
+├── components/     # Reusable Astro components
+├── layouts/        # Page layouts
+└── pages/          # Page routes
 ```
 
 ## Need Help?
 
-- **Development server not working?** Try `npm run setup` first
+- **Development server not working?** Try `npm install` first
 - **Changes not showing?** Hard refresh your browser (Ctrl+Shift+R)
+- **Build failing?** Check the [GitHub Actions logs](../../actions) for details
 - **Questions?** Contact the lab maintainer

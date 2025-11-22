@@ -1,0 +1,9 @@
+{
+  "title": "Bilinear MLPs enable weight-based mechanistic interpretability",
+  "date": "2024/10/01",
+  "conference": "ICLR'25",
+  "tags": ["spotlight"],
+  "link": "https://tdooms.github.io/research/bilinear",
+  "image": "thomas.jpg",
+  "description": "Using bilinear MLPs to reverse-engineer shallow MNIST and Tiny Stories models from their weights."
+}

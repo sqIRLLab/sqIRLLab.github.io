@@ -1,0 +1,9 @@
+{
+  "title": "Parameterized Synthetic Text Generation with SimpleStories",
+  "date": "2025/11/01",
+  "conference": "NeurIPS'25",
+  "tags": [],
+  "link": "https://openreview.net/pdf?id=sVh3eQ642W",
+  "image": "thomas.jpg",
+  "description": "A dataset full of simple yet diverse stories; the MNIST for language"
+}

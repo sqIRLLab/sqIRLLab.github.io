@@ -1,0 +1,9 @@
+{
+  "title": "Weight-based Decomposition: A Case for Bilinear MLPs",
+  "date": "2024/06/01",
+  "conference": "ICML'24",
+  "tags": ["workshop"],
+  "description": "Introducing bilinear MLPs as a new approach to weight-based interpretability.",
+  "image": "thomas.jpg",
+  "link": "https://tdooms.github.io/research/bilinear"
+}

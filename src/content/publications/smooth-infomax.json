@@ -1,0 +1,9 @@
+{
+  "title": "Smooth InfoMax - Towards Easier Post-Hoc Interpretability",
+  "date": "2025/09/01",
+  "link": "https://arxiv.org/abs/2408.12936",
+  "conference": "ECML-PKDD'25",
+  "tags": [],
+  "image": "fabian.jpg",
+  "description": "SIM makes post-hoc interpretability tools more effective through latent space constraints"
+}

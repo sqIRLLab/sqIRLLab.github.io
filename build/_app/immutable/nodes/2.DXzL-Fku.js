@@ -1,1 +1,0 @@
-import{f as s,a as f}from"../chunks/BVKn8-tb.js";import"../chunks/BpDx7vxY.js";import{f as e,s as i}from"../chunks/FtJ1th04.js";import{s as n}from"../chunks/CgbZ4OFu.js";import{N as p}from"../chunks/DqzKu2qT.js";var l=s("<!> <!>",1);function u(r,t){var o=l(),a=e(o);p(a,{page:"events"});var m=i(a,2);n(m,t,"default",{}),f(r,o)}export{u as component};

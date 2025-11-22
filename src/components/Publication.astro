@@ -1,0 +1,56 @@
+---
+const { title, description, conference, tags, image, link } = Astro.props;
+
+// Warn about invalid links
+if (link && (link.includes('_example') || link === '')) {
+	console.warn(`[Publication] Invalid link detected: "${link}" for publication "${title}"`);
+}
+
+const hasValidLink = link && !link.includes('_example') && link !== '';
+---
+
+{hasValidLink ? (
+	<a href={link} target="_blank" rel="noopener noreferrer" class="card bg-base-100 shadow-md hover:shadow-xl transition-shadow p-6 block">
+		<div class="flex items-start justify-between gap-6">
+			<div class="flex items-start gap-4 flex-grow min-w-0">
+				<img src={image} alt={title} class="w-16 h-16 object-cover rounded-lg flex-shrink-0" />
+				<div class="flex-grow min-w-0">
+					<h4 class="text-xl font-bold truncate">{title}</h4>
+					<p class="opacity-80 mt-2 truncate">{description}</p>
+				</div>
+			</div>
+			<div class="flex flex-col items-end gap-2 flex-shrink-0">
+				<span class="text-sm font-semibold whitespace-nowrap">{conference}</span>
+				{tags.length > 0 && (
+					<div class="flex gap-1 flex-wrap justify-end">
+						{tags.map((tag: string) => (
+							<span class="badge badge-primary badge-sm whitespace-nowrap">{tag}</span>
+						))}
+					</div>
+				)}
+			</div>
+		</div>
+	</a>
+) : (
+	<div class="card bg-base-100 shadow-md p-6">
+		<div class="flex items-start justify-between gap-6">
+			<div class="flex items-start gap-4 flex-grow min-w-0">
+				<img src={image} alt={title} class="w-16 h-16 object-cover rounded-lg flex-shrink-0" />
+				<div class="flex-grow min-w-0">
+					<h4 class="text-xl font-bold truncate">{title}</h4>
+					<p class="opacity-80 mt-2 truncate">{description}</p>
+				</div>
+			</div>
+			<div class="flex flex-col items-end gap-2 flex-shrink-0">
+				<span class="text-sm font-semibold whitespace-nowrap">{conference}</span>
+				{tags.length > 0 && (
+					<div class="flex gap-1 flex-wrap justify-end">
+						{tags.map((tag: string) => (
+							<span class="badge badge-primary badge-sm whitespace-nowrap">{tag}</span>
+						))}
+					</div>
+				)}
+			</div>
+		</div>
+	</div>
+)}

@@ -1,0 +1,9 @@
+{
+  "title": "Improving neural network accuracy by concurrently training with a twin network",
+  "date": "2025/04/01",
+  "link": "https://openreview.net/forum?id=TEmE9PSC65",
+  "conference": "ICLR'25",
+  "tags": [],
+  "image": "benjamin.jpg",
+  "description": "We show the applicability of twin network augmentation on convolutional neural networks"
+}

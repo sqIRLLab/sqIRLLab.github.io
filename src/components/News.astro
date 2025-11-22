@@ -1,0 +1,35 @@
+---
+const { description, date, link } = Astro.props;
+
+// Convert YYYY/MM/DD to human readable format
+const formatDate = (dateStr: string) => {
+	const [year, month] = dateStr.split('/');
+	const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+	return `${monthNames[parseInt(month) - 1]} ${year}`;
+};
+
+const formattedDate = formatDate(date);
+
+// Warn about invalid links
+if (link && (link.includes('_example') || link === '')) {
+	console.warn(`[News] Invalid link detected: "${link}"`);
+}
+
+const hasValidLink = link && !link.includes('_example') && link !== '';
+---
+
+{hasValidLink ? (
+	<a href={link} target="_blank" rel="noopener noreferrer" class="card bg-base-100 shadow-sm hover:shadow-md transition-shadow p-4 block">
+		<div class="flex items-baseline justify-between gap-4">
+			<p class="text-sm font-bold flex-grow min-w-0 truncate">{description}</p>
+			<span class="text-sm opacity-60 whitespace-nowrap">{formattedDate}</span>
+		</div>
+	</a>
+) : (
+	<div class="card bg-base-100 shadow-sm p-4">
+		<div class="flex items-baseline justify-between gap-4">
+			<p class="text-sm font-bold flex-grow min-w-0 truncate">{description}</p>
+			<span class="text-sm opacity-60 whitespace-nowrap">{formattedDate}</span>
+		</div>
+	</div>
+)}

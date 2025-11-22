@@ -1,0 +1,72 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navbar from '../components/Navbar.astro';
+import Publication from '../components/Publication.astro';
+import { getCollection } from 'astro:content';
+
+// Convert to sentence case while preserving known acronyms
+function toSentenceCase(text: string): string {
+	// Common acronyms to preserve
+	const acronyms = ['AI', 'ML', 'MLP', 'MLPs', 'CNN', 'SNN', 'SAE', 'SAEs', 'EM', 'MNIST', 'CIFAR', 'HSI', 'NLP', 'ABSA', 'ICLR', 'ICML', 'TMLR', 'NeurIPS', 'ECML', 'PKDD'];
+
+	// First, lowercase everything
+	let result = text.toLowerCase();
+
+	// Capitalize first letter
+	result = result.charAt(0).toUpperCase() + result.slice(1);
+
+	// Restore acronyms (case-sensitive replacement)
+	acronyms.forEach(acronym => {
+		const regex = new RegExp(`\\b${acronym.toLowerCase()}\\b`, 'gi');
+		result = result.replace(regex, acronym);
+	});
+
+	// Capitalize first letter after periods only
+	result = result.replace(/(\.)\s+(\w)/g, (_, punctuation, letter) => {
+		return punctuation + ' ' + letter.toUpperCase();
+	});
+
+	return result;
+}
+
+const publications = await getCollection('publications');
+
+// Sort by date (newest first) and apply sentence case
+const sortedPublications = publications
+	.map(pub => ({
+		...pub,
+		data: {
+			...pub.data,
+			title: toSentenceCase(pub.data.title),
+			description: toSentenceCase(pub.data.description)
+		}
+	}))
+	.sort((a, b) => b.data.date.localeCompare(a.data.date));
+
+// Group by year for separators
+const publicationsByYear = sortedPublications.reduce((acc, pub) => {
+	const year = pub.data.date.split('/')[0];
+	if (!acc[year]) acc[year] = [];
+	acc[year].push(pub);
+	return acc;
+}, {} as Record<string, typeof publications>);
+
+const years = Object.keys(publicationsByYear).sort((a, b) => b.localeCompare(a));
+---
+
+<BaseLayout title="Publications - sqIRL Lab">
+	<Navbar currentPage="/publications" />
+
+	<div class="max-w-[1000px] mx-auto px-4 py-8">
+		{years.map((year) => (
+			<div class="mb-8">
+				<div class="divider font-bold text-lg opacity-60">{year}</div>
+				<div class="flex flex-col gap-4">
+					{publicationsByYear[year].map((pub) => (
+						<Publication {...pub.data} image={`/${pub.data.image}`} />
+					))}
+				</div>
+			</div>
+		))}
+	</div>
+</BaseLayout>

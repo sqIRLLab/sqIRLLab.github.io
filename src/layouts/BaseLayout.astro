@@ -1,0 +1,27 @@
+---
+interface Props {
+	title?: string;
+	description?: string;
+}
+
+const { title = 'sqIRL - Interpretable Representation Learning', description = 'Research lab focused on interpretable representation learning and explainable AI' } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" data-theme="pastel" class="overflow-y-scroll">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/png" href="/favicon.png" />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+		<title>{title}</title>
+	</head>
+	<body class="bg-base-200 min-h-screen">
+		<slot />
+	</body>
+</html>

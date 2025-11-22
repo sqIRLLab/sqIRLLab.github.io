@@ -1,0 +1,38 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navbar from '../components/Navbar.astro';
+import Event from '../components/Event.astro';
+import { getCollection } from 'astro:content';
+
+const events = await getCollection('events');
+
+// Sort by date (newest first)
+const sortedEvents = events.sort((a, b) => b.data.date.localeCompare(a.data.date));
+
+// Group by year for separators
+const eventsByYear = sortedEvents.reduce((acc, event) => {
+	const year = event.data.date.split('/')[0];
+	if (!acc[year]) acc[year] = [];
+	acc[year].push(event);
+	return acc;
+}, {} as Record<string, typeof events>);
+
+const years = Object.keys(eventsByYear).sort((a, b) => b.localeCompare(a));
+---
+
+<BaseLayout title="Events - sqIRL Lab">
+	<Navbar currentPage="/events" />
+
+	<div class="max-w-[1000px] mx-auto px-4 py-8">
+		{years.map((year) => (
+			<div class="mb-8">
+				<div class="divider font-bold text-lg opacity-60">{year}</div>
+				<div class="flex flex-col gap-4">
+					{eventsByYear[year].map((event) => (
+						<Event {...event.data} image={`/${event.data.image}`} />
+					))}
+				</div>
+			</div>
+		))}
+	</div>
+</BaseLayout>

@@ -1,0 +1,9 @@
+{
+  "title": "The Trifecta: Three techniques for deeper Forward-Forward networks",
+  "date": "2023/11/01",
+  "conference": "TMLR",
+  "tags": [],
+  "description": "Three techniques to significantly improve the Forward-Forward algorithm. We achieve 84% on CIFAR-10.",
+  "image": "thomas.jpg",
+  "link": "https://tdooms.github.io/research/trifecta"
+}

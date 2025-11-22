@@ -1,0 +1,9 @@
+{
+  "title": "Tokenized SAEs: Disentangling SAE Reconstructions",
+  "date": "2024/06/01",
+  "conference": "ICML'24",
+  "tags": ["workshop"],
+  "description": "We use a per-token bias in SAEs to separate token reconstructions from interesting features.",
+  "image": "thomas.jpg",
+  "link": "https://tdooms.github.io/research/tokenized"
+}

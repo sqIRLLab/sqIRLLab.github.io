@@ -1,0 +1,9 @@
+{
+  "title": "A Taxonomy of Interpretation and Explanation Methods for Capsule Network Architectures",
+  "date": "2025/11/01",
+  "conference": "Neurocomputing",
+  "tags": [],
+  "link": "https://www.sciencedirect.com/science/article/abs/pii/S0925231225026979",
+  "image": "saja.png",
+  "description": "This paper presents a comprehensive taxonomy of interpretation and explanation methods developed for Capsule Network (CapsNet) architectures, analyzing their mechanisms, applicability, and performance across diverse problem domains."
+}

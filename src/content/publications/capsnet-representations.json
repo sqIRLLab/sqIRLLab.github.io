@@ -1,0 +1,9 @@
+{
+  "title": "Towards the Characterization of Representations Learned via Capsule-Based Network Architectures",
+  "date": "2025/02/01",
+  "conference": "Neurocomputing",
+  "tags": [],
+  "link": "https://www.sciencedirect.com/science/article/abs/pii/S0925231224017983",
+  "image": "saja.png",
+  "description": "This paper provides a systematic and principled study on the interpretability of Capsule Network (CapsNet) representations, aiming to characterize the nature and structure of the learned features across diverse architectures and datasets"
+}

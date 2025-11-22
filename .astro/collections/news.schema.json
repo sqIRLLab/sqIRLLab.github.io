@@ -1,0 +1,41 @@
+{
+  "$ref": "#/definitions/news",
+  "definitions": {
+    "news": {
+      "type": "object",
+      "properties": {
+        "date": {
+          "type": "string",
+          "pattern": "^\\d{4}\\/\\d{2}\\/\\d{2}$",
+          "errorMessage": {
+            "pattern": "Date must be in YYYY/MM/DD format (e.g., 2024/01/15)"
+          }
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "errorMessage": {
+            "minLength": "Cannot be empty"
+          }
+        },
+        "description": {
+          "$ref": "#/definitions/news/properties/title"
+        },
+        "link": {
+          "type": "string",
+          "format": "uri",
+          "errorMessage": {
+            "format": "Must be a valid URL starting with http:// or https://"
+          }
+        }
+      },
+      "required": [
+        "date",
+        "title",
+        "description"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

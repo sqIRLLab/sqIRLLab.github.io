@@ -1,0 +1,9 @@
+{
+  "title": "Label-efficient learning for radio frequency fingerprint identification",
+  "date": "2025/03/01",
+  "link": "https://ieeexplore.ieee.org/abstract/document/10978444",
+  "conference": "IEEE WCNC'25",
+  "tags": [],
+  "image": "fabian.jpg",
+  "description": "We introduce a label-efficient approach for Radio Frequency Fingerprint Identification, achieving competitive accuracy with up to 10x fewer labels."
+}

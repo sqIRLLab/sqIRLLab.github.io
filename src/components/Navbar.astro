@@ -1,0 +1,43 @@
+---
+interface Props {
+	currentPage?: string;
+}
+
+const { currentPage = '' } = Astro.props;
+
+const navItems = [
+	{ name: 'Home', path: '/', icon: 'fa-home' },
+	{ name: 'People', path: '/people', icon: 'fa-users' },
+	{ name: 'Events', path: '/events', icon: 'fa-calendar' },
+	{ name: 'Publications', path: '/publications', icon: 'fa-book' },
+];
+---
+
+<div class="bg-base-100 shadow-md sticky top-0 z-50">
+	<div class="max-w-[1000px] mx-auto px-4 flex items-center justify-between py-3">
+		<div class="dropdown lg:hidden">
+			<div tabindex="0" role="button" class="btn btn-ghost">
+				<i class="fas fa-bars"></i>
+			</div>
+			<ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+				{navItems.map((item) => (
+					<li>
+						<a href={item.path} class={currentPage === item.path ? 'active' : ''}>
+							<i class={`fas ${item.icon}`}></i>
+							{item.name}
+						</a>
+					</li>
+				))}
+			</ul>
+		</div>
+		<a href="/" class="text-xl font-bold lg:hidden">sqIRL</a>
+		<div role="tablist" class="tabs tabs-boxed hidden lg:flex mx-auto">
+			{navItems.map((item) => (
+				<a href={item.path} role="tab" class={`tab ${currentPage === item.path ? 'tab-active' : ''}`}>
+					<i class={`fas ${item.icon} mr-2`}></i>
+					{item.name}
+				</a>
+			))}
+		</div>
+	</div>
+</div>

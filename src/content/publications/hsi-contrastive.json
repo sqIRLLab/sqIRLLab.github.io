@@ -1,0 +1,9 @@
+{
+  "title": "A Contrastive Learning Method for Multi-Label Predictors on Hyperspectral Images",
+  "date": "2024/02/01",
+  "conference": "WHISPERS",
+  "tags": [],
+  "link": "https://doi.org/10.1109/WHISPERS61460.2023.10430726",
+  "image": "salma.jpg",
+  "description": "Self-supervised contrastive learning for multi-label hyperspectral image classification"
+}

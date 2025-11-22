@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navbar from '../components/Navbar.astro';
+import Person from '../components/Person.astro';
+import { getCollection } from 'astro:content';
+
+const people = await getCollection('people');
+
+// Sort by status order: Professor > Postdoctoral > PhD
+const statusOrder = { 'Professor': 1, 'Postdoctoral researcher': 2, 'PhD student': 3 };
+const sortedPeople = people.sort((a, b) => {
+	const orderA = statusOrder[a.data.status as keyof typeof statusOrder] || 999;
+	const orderB = statusOrder[b.data.status as keyof typeof statusOrder] || 999;
+	return orderA - orderB;
+});
+---
+
+<BaseLayout title="People - sqIRL Lab">
+	<Navbar currentPage="/people" />
+
+	<div class="max-w-[1000px] mx-auto px-4 py-8">
+		<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+			{sortedPeople.map((person) => (
+				<Person {...person.data} image={`/${person.data.image}`} />
+			))}
+		</div>
+	</div>
+</BaseLayout>

@@ -1,0 +1,52 @@
+---
+const { title, description, image, link } = Astro.props;
+
+// Extract event type (Talk, Webinar, etc.) and location from title
+const parseTitle = (titleStr: string) => {
+	const match = titleStr.match(/^(Talk|Webinar|Workshop|Event)\s*@\s*(.+)$/);
+	if (match) {
+		return {
+			type: match[1],
+			location: match[2]
+		};
+	}
+	return { type: null, location: titleStr };
+};
+
+const { type, location } = parseTitle(title);
+
+// Warn about invalid links
+if (link && (link.includes('_example') || link === '')) {
+	console.warn(`[Event] Invalid link detected: "${link}" for event "${title}"`);
+}
+
+const hasValidLink = link && !link.includes('_example') && link !== '';
+---
+
+{hasValidLink ? (
+	<a href={link} target="_blank" rel="noopener noreferrer" class="card bg-base-100 shadow-md hover:shadow-xl transition-shadow p-6 block">
+		<div class="flex items-start gap-4">
+			<img src={image} alt={title} class="w-16 h-16 object-cover rounded-lg flex-shrink-0" />
+			<div class="flex-grow min-w-0">
+				<div class="flex items-center gap-2 mb-2">
+					<h4 class="text-xl font-bold truncate">{location}</h4>
+					{type && <span class="badge badge-neutral badge-sm opacity-60 whitespace-nowrap">{type}</span>}
+				</div>
+				<p class="opacity-80 truncate">{description}</p>
+			</div>
+		</div>
+	</a>
+) : (
+	<div class="card bg-base-100 shadow-md p-6">
+		<div class="flex items-start gap-4">
+			<img src={image} alt={title} class="w-16 h-16 object-cover rounded-lg flex-shrink-0" />
+			<div class="flex-grow min-w-0">
+				<div class="flex items-center gap-2 mb-2">
+					<h4 class="text-xl font-bold truncate">{location}</h4>
+					{type && <span class="badge badge-neutral badge-sm opacity-60 whitespace-nowrap">{type}</span>}
+				</div>
+				<p class="opacity-80 truncate">{description}</p>
+			</div>
+		</div>
+	</div>
+)}

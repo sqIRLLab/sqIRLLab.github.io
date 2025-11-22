@@ -1,0 +1,9 @@
+{
+  "title": "Training Methods of Multi-Label Prediction Classifiers for Hyperspectral Remote Sensing Images",
+  "date": "2023/12/01",
+  "conference": "Remote Sensing",
+  "tags": [],
+  "link": "https://doi.org/10.3390/rs15245656",
+  "image": "salma.jpg",
+  "description": "A deep learning model for hyperspectral remote sensing, shifting from traditional single-label, pixel-level classification to multi-label, patch-level analysis"
+}

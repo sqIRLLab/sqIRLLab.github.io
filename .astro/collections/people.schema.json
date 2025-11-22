@@ -1,0 +1,46 @@
+{
+  "$ref": "#/definitions/people",
+  "definitions": {
+    "people": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "errorMessage": {
+            "minLength": "Cannot be empty"
+          }
+        },
+        "status": {
+          "$ref": "#/definitions/people/properties/name"
+        },
+        "specialty": {
+          "$ref": "#/definitions/people/properties/name"
+        },
+        "image": {
+          "type": "string",
+          "pattern": "\\.(jpg|jpeg|png|gif|webp|svg)$",
+          "errorMessage": {
+            "pattern": "Image must be a valid image file (.jpg, .jpeg, .png, .gif, .webp, or .svg)"
+          }
+        },
+        "link": {
+          "type": "string",
+          "format": "uri",
+          "errorMessage": {
+            "format": "Must be a valid URL starting with http:// or https://"
+          }
+        }
+      },
+      "required": [
+        "name",
+        "status",
+        "specialty",
+        "image",
+        "link"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

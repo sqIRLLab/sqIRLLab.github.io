@@ -1,0 +1,8 @@
+{
+  "title": "Compositionality unlocks deep interpretable models",
+  "date": "2024/12/01",
+  "conference": "AAAI'25",
+  "tags": ["workshop"],
+  "image": "thomas.jpg",
+  "description": "Introducing a global SVD-like algorithm for multi-linear models."
+}
