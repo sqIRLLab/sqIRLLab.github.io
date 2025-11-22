@@ -30,6 +30,9 @@
           "errorMessage": {
             "format": "Must be a valid URL starting with http:// or https://"
           }
+        },
+        "$schema": {
+          "type": "string"
         }
       },
       "required": [

@@ -34,6 +34,9 @@
         },
         "description": {
           "$ref": "#/definitions/events/properties/title"
+        },
+        "$schema": {
+          "type": "string"
         }
       },
       "required": [

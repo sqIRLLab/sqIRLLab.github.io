@@ -43,6 +43,9 @@
         },
         "description": {
           "$ref": "#/definitions/publications/properties/title"
+        },
+        "$schema": {
+          "type": "string"
         }
       },
       "required": [

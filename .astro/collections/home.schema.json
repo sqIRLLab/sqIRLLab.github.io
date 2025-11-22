@@ -30,6 +30,9 @@
           "errorMessage": {
             "pattern": "Image must be a valid image file (.jpg, .jpeg, .png, .gif, .webp, or .svg)"
           }
+        },
+        "$schema": {
+          "type": "string"
         }
       },
       "required": [
