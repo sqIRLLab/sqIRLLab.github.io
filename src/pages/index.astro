@@ -10,6 +10,9 @@ const sortedNews = news.sort((a, b) => b.data.date.localeCompare(a.data.date));
 
 // Get home page content
 const homeContent = await getEntry('home', 'main');
+if (!homeContent) {
+	throw new Error('Home page content not found. Please create src/content/home/main.json');
+}
 const { title, subtitle, description, email, logo } = homeContent.data;
 ---
 
