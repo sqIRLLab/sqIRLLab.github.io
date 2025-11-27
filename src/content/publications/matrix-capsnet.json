@@ -1,9 +1,9 @@
 {
   "title": "Analyzing the Explanation and Interpretation Potential of Matrix Capsule Networks",
-  "date": "2025/02/01",
-  "conference": "ECML-PKDD",
+  "date": "2023/09/01",
+  "conference": "ECML-PKDD'23",
   "tags": ["workshop"],
   "link": "https://link.springer.com/chapter/10.1007/978-3-031-74630-7_5#citeas",
   "image": "saja.png",
-  "description": "This study investigates the internal mechanisms of Matrix Capsule Networks with the EM Routing algorithm"
+  "description": "A look into the internal mechanisms of Matrix CapNets with EM Routing"
 }

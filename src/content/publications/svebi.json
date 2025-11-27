@@ -1,0 +1,9 @@
+{
+  "title": "SVEBI: Towards the Interpretation and Explanation of Spiking Neural Networks",
+  "date": "2025/09/01",
+  "link": "https://link.springer.com/chapter/10.1007/978-3-032-06066-2_27",
+  "conference": "ECML-PKDD'25",
+  "tags": [],
+  "image": "jose.png",
+  "description": "A posthoc explanation method for spiking neural networks"
+}
