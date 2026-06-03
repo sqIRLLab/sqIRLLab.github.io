@@ -48,7 +48,7 @@ Create a new JSON file in `src/content/publications/` (e.g., `your-paper.json`):
 {
   "title": "Your Paper Title",
   "date": "Month YYYY",
-  "published": "Venue Name",
+  "conference": "Venue Name",
   "link": "https://arxiv.org/...",
   "image": "people/author.jpg",
   "description": "Brief description of your work"
