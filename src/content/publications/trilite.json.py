@@ -1,0 +1,8 @@
+{
+  "title": "TriLite: Efficient Weakly Supervised Object Localization with Universal Visual Features and Tri-Region Disentanglement",
+  "date": "June 2026",
+  "published": "CVPR",
+  "link": "https://openaccess.thecvf.com/content/CVPR2026/papers/Sabaghi_TriLite_Efficient_Weakly_Supervised_Object_Localization_with_Universal_Visual_Features_CVPR_2026_paper.pdf",
+  "image": "people/arian.jpg",
+  "description": "Efficient framework for joint classification and localization with SOTA performance"
+}
